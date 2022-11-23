@@ -1,0 +1,126 @@
+:root{ 
+    --red-10: #ffe7e6;
+    --red-20: #feb7b3;
+    --red-30: #fe8781;
+    --red-40: #fd584e;
+    --red-50: #fd281c;
+    --red-60: #e30e02;
+    --red-70: #b10b02;
+    --red-80: #7e0801;
+    --red-90: #4c0501;
+    --red-100: #190200;
+
+    --yellow-10: #fffde6;
+    --yellow-20: #fff8b3;
+    --yellow-30: #fef480;
+    --yellow-40: #fef04e;
+    --yellow-50: #feeb1b;
+    --yellow-60: #e4d201;
+    --yellow-70: #b1a301;
+    --yellow-80: #7f7501;
+    --yellow-90: #4c4600;
+    --yellow-100: #191700;
+
+    --blue-10: #eaf5fb;
+    --blue-20: #bfe2f2;
+    --blue-30: #94ceea;
+    --blue-40: #6abae2;
+    --blue-50: #3fa7d9;
+    --blue-60: #268dc0;
+    --blue-70: #1d6e95;
+    --blue-80: #154e6b;
+    --blue-90: #0d2f40;
+    --blue-100: #041015;
+
+    --white-10: #f1f2f4;
+    --white-20: #d5d9dd;
+    --white-30: #b8bfc6;
+    --white-40: #9ca6b0;
+    --white-50: #808c99;
+    --white-60: #66737f;
+    --white-70: #4f5963;
+    --white-80: #394047;
+    --white-90: #22262a;
+    --white-100: #0b0d0e;
+
+    --black-100: #020609;
+}
+
+*{
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0em;
+    padding: 0;
+}
+body {
+    background-color: var(--white-10);
+    color: var(--black-100);
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-name {
+    padding-left: 25px;
+}
+
+.header-info {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.header-info-content {
+    margin: 0 25px;
+    border-radius: 10px;
+    background-color: var(--white-20);
+    padding: 15px 25px;
+}
+
+.header-icons {
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v71/kJF4BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY40KH8nGzv3fz_VFU22ZZLsYEpzC_1ims5Y0.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    margin: 0 10px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.main-body {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-body-content {
+    margin-top: 1em;
+}
