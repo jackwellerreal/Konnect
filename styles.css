@@ -117,10 +117,12 @@ body {
 
 
 .main-body {
-    height: 100vh;
-    width: 100%;
+    margin: 10em auto 0 auto;
+    padding: 5em;
+    width: 70%;
+    border-radius: 10px;
+    background-color: var(--white-20);
 }
 
 .main-body-content {
-    margin-top: 1em;
 }
