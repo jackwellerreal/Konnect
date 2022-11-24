@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Play Connect 4</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
         <script src="index.js"></script>
 
@@ -18,27 +18,18 @@
         <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon/32.jpg">
         <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon/16.jpg">
     </head>
-    <body id="home" onload="pageload()">
-        
-        <div class="header">
-            <div class="header-name">
-                <h1>playconnect4<b>.</b>online</h1>
-            </div>
-
-            <div class="header-info">
-                <a class="header-info-content-selected">PLAY</a>
-                <a class="header-info-content">LEADERBOARD</a>
-                <a class="header-info-content">COMPETITIONS</a>
-            </div>
-
-            <div class="header-icons">
-                <a class="header-icons-content" href="/auth/login.html"><iconify-icon inline icon="fa-solid:sign-in-alt" class="header-icons-icons"></iconify-icon> SIGN IN</a>
-            </div>
-        </div>
-
+    <body id="login" onload="pageload()">
         <div class="main-body">
             <div class="main-body-content">
-                <p>test</p>
+                <h1>Login</h1>
+                
+                <input type="email" name="email" class="login-input" placeholder="Email" required>
+                <input type="password" name="pass" class="login-input" placeholder="Password" required> 
+
+                </br>
+                <a class="pass-reset">Forgor Password</a>   
+                
+                <button class="">LOGIN</button>
             </div>
         </div>
     </body>
