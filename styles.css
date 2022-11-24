@@ -149,9 +149,11 @@ body {
 
 
 .main-body {
-    margin: 10em auto 0 auto;
-    padding: 5em;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5em auto 0 auto;
+    padding: 2.5em;
+    width: 50%;
     border-radius: 10px;
     background-color: var(--dark-60);
     -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
@@ -163,7 +165,7 @@ body {
     margin: 10em auto 0 auto;
     padding: 2.5em 2em;
     width: 25%;
-    height: 10em;
+    height: 13em;
     border-radius: 10px;
     background-color: var(--dark-60);
     -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
@@ -172,16 +174,10 @@ body {
 }
 
 #login .login-input {
-    display: block;
-    background-color: var(--dark-70);
-    color: var(--light-10);
-    caret-color: var(--light-10);
-    border-radius: 10px;
-    width: 75%;
-    height: 2.5em;
-    margin: 1em 0 0 0;
-    padding: 0.25em;
     border: none;
+    height: 2.5em;
+    width: 95%;
+    background-color: var(--dark-70);
 }
 #login .login-input:focus {
     outline: none;
@@ -193,5 +189,30 @@ body {
     color: var(--light-10);
 }
 
-#login .pass-reset {
+#login .login-container {
+    display: block;
+    background-color: var(--dark-70);
+    color: var(--light-10);
+    caret-color: var(--light-10);
+    border-radius: 10px;
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 0.25em;
+    border: none;
+    width: 100%;
+}
+
+
+#login .login-button {
+    display: block;
+    background-color: var(--dark-70);
+    color: var(--light-10);
+    caret-color: var(--light-10);
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 0.25em;
+    border: none;
+    cursor: pointer;
 }
