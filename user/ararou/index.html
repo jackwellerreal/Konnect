@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>Play Connect 4</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../../styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-        <script src="index.js"></script>
+        <script src="../../index.js"></script>
 
         <link rel="manifest" href="site.webmanifest">
         <meta name="viewport" width="100%">
@@ -18,7 +18,7 @@
         <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon/32.jpg">
         <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon/16.jpg">
     </head>
-    <body id="home" onload="pageload()">
+    <body id="user" onload="pageload()">
         
         <div class="header">
             <div class="header-name">
@@ -36,24 +36,19 @@
             </div>
         </div>
 
-        <div class="main-modes">
-            <div class="main-modes-content">
-                <a class="main-modes-anchor" href="/play/index.html">
-                    <h1>Quick Play <iconify-icon inline icon="fa6-solid:bolt-lightning" style="color: var(--yellow-40);"></iconify-icon></h1>
-                    <p style="padding-top: 1em;">Play a quick game</p>
-                </a>
+        <div class="main-info">
+            <div class="main-info-name">
+                <img class="main-info-pfp" src="pfp.png">
+                <div>
+                    <h1>Ararou</h1>
+                    <h3 style="padding-top: 0.25em; color: var(--light-40);">@ararou</h3>
+                </div>
             </div>
-            <div class="main-modes-content">
-                <a class="main-modes-anchor" href="/play/custom.html">
-                    <h1>Custom <iconify-icon inline icon="fa6-solid:code" style="color: var(--red-40);"></h1>
-                    <p style="padding-top: 1em;">Play a game with custom rules</p>
-                </a>
-            </div>
-            <div class="main-modes-content">
-                <a class="main-modes-anchor" href="/play/ranked.html">
-                    <h1>Ranked <iconify-icon inline icon="fa6-solid:medal" style="color: var(--blue-40);"></h1>
-                    <p style="padding-top: 1em;">Play against the best players</p>
-                </a>
+            <div class="main-info-desc">
+                <h2>About Me</h2>
+                <h3 style="padding-top: 1em;">
+                    <a href="https://storyzink.com/m/pa24d76f" target="_blank" style="color: var(--blue-40)">https://storyzink.com/m/pa24d76f/</a>
+                </h3>
             </div>
         </div>
     </body>
