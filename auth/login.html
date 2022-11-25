@@ -24,17 +24,19 @@
                 <h1>Log In</h1>
                 
                 </br>
-                <div class="login-input-container">
-                    <input type="email" id="email" class="login-input" placeholder="Email" required>
-                </div>
-                <div class="login-input-container">
-                    <input type="password" id="pass" class="login-input" placeholder="Password" required> 
-                </div>
-
-                </br>
-                <button class="login-button">LOG IN</button>
-
-                </br> 
+                <form>
+                    <div class="login-input-container">
+                        <input type="email" id="email" class="login-input" placeholder="Email" required>
+                    </div>
+                    <div class="login-input-container">
+                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" required> 
+                    </div>
+    
+                    </br>
+                    <button class="login-button">LOG IN</button>
+    
+                    </br> 
+                </form>
                 <a href="/auth/signup.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i dont have an account</p></a>
             </div>
         </div>

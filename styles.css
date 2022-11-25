@@ -68,7 +68,7 @@ body {
     height: 100vh;
 }
 
-.anchor-white {
+a {
     color: var(--light-10);
     text-decoration: none;
 }
@@ -157,10 +157,13 @@ body {
 }
 
 
-#home .main-modes {
+#home .post-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 5em auto 0 auto;
+}
+
+#home .post {
+    margin: 2.5em auto 0 auto;
     padding: 2.5em;
     width: 50%;
     border-radius: 10px;
@@ -170,36 +173,30 @@ body {
     box-shadow: 0px 10px 10px 0px var(--dark-90);
 }
 
-#home .main-modes-content {
-    margin: 0 25px;
+#home .post-content {
+    margin: 25px 0 0 0;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#home .post-info {
+    display: flex;    
+}
+
+#home .post-pfp {
+    height: 60px;
+    width: 60px;
     border-radius: 10px;
-    background-color: var(--dark-80);
-    -webkit-box-shadow: 0px 5px 10px 0px var(--dark-90);
-    -moz-box-shadow: 0px 5px 10px 0px var(--dark-90);
-    box-shadow: 0px 5px 10px 0px var(--dark-90);
-    padding: 25px 25px;
-    cursor: pointer;
-    transition: ease 0.5s;
+    margin-right: 1.5em;
 }
 
-#home .main-modes-anchor {
-    color: var(--light-10);
-    text-decoration: none;
-}
 
-#home .main-modes-content:hover {
-    -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
-    -moz-box-shadow: 0px 10px 10px 0px var(--dark-90);
-    box-shadow: 0px 10px 10px 0px var(--dark-90);
-    cursor: pointer;
-    transform: translateY(-5px);
-}
 
 #login .main-body {
     margin: 10em auto 0 auto;
     padding: 2.5em 2em;
     width: 25%;
-    height: 17em;
+    height: 18em;
     border-radius: 10px;
     background-color: var(--dark-60);
     -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
@@ -218,6 +215,12 @@ body {
     border-radius: 10px;
     padding: 0.25em 0 0 0;
     margin: 1em 0 0 0;
+}
+
+#login .login-input-tos {
+    border: none;
+    background-color: var(--dark-70);
+    color: var(--light-10);
 }
 
 #login .login-input {
@@ -313,4 +316,29 @@ body {
     box-shadow: 0px 10px 10px 0px var(--dark-90);
     padding: 25px 25px;
     transition: ease 0.5s;
+}
+@media screen and (max-width: 860px) {
+    .header {
+        display: block;
+    }
+    .header-info {
+        margin-top: 2em;
+    }
+    .header-icons {
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 1009px) {
+    .header-info-content {
+        margin: 0px;
+    }
+    .header-info-content:hover {
+        margin: 0px;
+    }
+    .header-icons-content {
+        margin: 0px;
+    }
+    .header-icons-content:hover {
+        margin: 0px;
+    }
 }

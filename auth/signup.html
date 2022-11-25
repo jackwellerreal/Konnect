@@ -24,17 +24,21 @@
                 <h1>Sign Up</h1>
                 
                 </br>
-                <div class="login-input-container">
-                    <input type="email" id="email" class="login-input" placeholder="Email" required>
-                </div>
-                <div class="login-input-container">
-                    <input type="password" id="pass" class="login-input" placeholder="Password" required> 
-                </div>
+                <form>
+                    <div class="login-input-container">
+                        <input type="email" id="email" class="login-input" placeholder="Email" required>
+                    </div>
+                    <div class="login-input-container">
+                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" required> 
+                    </div>
+    
+                    </br>
+                    <p><input type="checkbox" class="login-input-tos" required> I am over 13 years old.</p>
+                    <button class="login-button">SIGN UP</button>
+    
+                    </br> 
 
-                </br>
-                <button class="login-button">SIGN UP</button>
-
-                </br> 
+                </form>
                 <a href="/auth/login.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
             </div>
         </div>
