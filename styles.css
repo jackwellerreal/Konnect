@@ -83,8 +83,7 @@ body {
 }
 
 .header-info {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     font-size: 1.25em;
     font-weight: bold;
 }
@@ -117,7 +116,6 @@ body {
 }
 
 .header-icons {
-    margin-left: auto;
     padding-right: 25px;
     font-size: 1.25em;
     font-weight: bold;
@@ -148,7 +146,7 @@ body {
 }
 
 
-.main-body {
+#home .main-modes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5em auto 0 auto;
@@ -161,11 +159,22 @@ body {
     box-shadow: 0px 10px 10px 0px var(--dark-90);
 }
 
+#home .main-modes-content {
+    margin: 0 25px;
+    border-radius: 10px;
+    background-color: var(--dark-80);
+    padding: 25px 25px;
+    -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
+    -moz-box-shadow: 0px 10px 10px 0px var(--dark-90);
+    box-shadow: 0px 10px 10px 0px var(--dark-90);
+    cursor: pointer;
+}
+
 #login .main-body {
     margin: 10em auto 0 auto;
     padding: 2.5em 2em;
     width: 25%;
-    height: 13em;
+    height: 17em;
     border-radius: 10px;
     background-color: var(--dark-60);
     -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
@@ -173,12 +182,29 @@ body {
     box-shadow: 0px 10px 10px 0px var(--dark-90);
 }
 
+#login .login-input-container {
+    display: block;
+    border: none;
+    height: 2.5em;
+    width: 100%;
+    background-color: var(--dark-70);
+    color: var(--light-10);
+    caret-color: var(--light-10);
+    border-radius: 10px;
+    padding: 0.25em 0 0 0;
+    margin: 1em 0 0 0;
+}
+
 #login .login-input {
     border: none;
     height: 2.5em;
-    width: 95%;
+    width: 90%;
     background-color: var(--dark-70);
+    color: var(--light-10);
+    caret-color: var(--light-10);
+    margin-left: 0.25em;
 }
+
 #login .login-input:focus {
     outline: none;
 }
@@ -189,30 +215,16 @@ body {
     color: var(--light-10);
 }
 
-#login .login-container {
-    display: block;
-    background-color: var(--dark-70);
-    color: var(--light-10);
-    caret-color: var(--light-10);
-    border-radius: 10px;
-    width: 100%;
-    margin: 1em 0 0 0;
-    padding: 0.25em;
-    border: none;
-    width: 100%;
-}
-
-
 #login .login-button {
     display: block;
+    border: none;
+    height: 2.5em;
+    width: 100%;
     background-color: var(--dark-70);
     color: var(--light-10);
     caret-color: var(--light-10);
     border-radius: 10px;
-    height: 3em;
-    width: 100%;
+    padding: 0.25em 0 0.25em 0;
     margin: 1em 0 0 0;
-    padding: 0.25em;
-    border: none;
     cursor: pointer;
 }
