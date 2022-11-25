@@ -183,6 +183,23 @@ a {
     display: flex;    
 }
 
+#home .post-options {
+    color: var(--light-70);
+    margin-right: 2em;
+    font-weight: 550;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+#home .post-options-like:hover {color: var(--red-40);}
+#home .post-options-share:hover {color: var(--blue-50);}
+#home .post-options-comment:hover {color: var(--yellow-40);}
+
+#home .post-options-container {
+    display: flex;
+    padding-top: 25px;
+}
+
 #home .post-pfp {
     height: 60px;
     width: 60px;
