@@ -1,0 +1,49 @@
+{   
+    "users":[
+        {
+            "displayname":"what?",
+            "username":"whatqm",
+            "verified":true,
+            "posts":[
+                {
+                    "content":"hi. you cant post stuff yet here sadly, but you will be able soon™",
+                    "options":{
+                        "likes":0,
+                        "shares":0,
+                        "replies":0
+                    }
+                }
+            ]
+        },
+        {
+            "displayname":"Default Box",
+            "username":"default-box",
+            "verified":false,
+            "posts":[
+                {
+                    "content":"test",
+                    "options":{
+                        "likes":0,
+                        "shares":0,
+                        "replies":0
+                    }
+                }
+            ]
+        },
+        {
+            "displayname":"Ararou",
+            "username":"ararou",
+            "verified":false,
+            "posts":[
+                {
+                    "content":"m?help",
+                    "options":{
+                        "likes":0,
+                        "shares":0,
+                        "replies":0
+                    }
+                }
+            ]
+        }        
+    ]
+}
