@@ -1,0 +1,19 @@
+{
+    "posts":[
+        {
+            "content":"hi",
+            "author":"whatqm",
+            "date":"26/11/2022"
+        },
+        {
+            "content":"hello",
+            "author":"whatqm",
+            "date":"26/11/2022"
+        },
+        {
+            "content":"hey",
+            "author":"whatqm",
+            "date":"26/11/2022"
+        }
+    ]
+}
