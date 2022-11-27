@@ -1,0 +1,212 @@
+:root{ 
+    --red-10: #fce9ec;
+    --red-20: #f5bcc5;
+    --red-30: #ef909f;
+    --red-40: #e86378;
+    --red-50: #e23752;
+    --red-60: #c81d38;
+    --red-70: #9c172c;
+    --red-80: #6f101f;
+    --red-90: #430a13;
+    --red-100: #160306;
+
+    --orange-10: #fdf4e8;
+    --orange-20: #f8dfba;
+    --orange-30: #f3c98b;
+    --orange-40: #efb35d;
+    --orange-50: #ea9e2f;
+    --orange-60: #d08415;
+    --orange-70: #a26710;
+    --orange-80: #74490c;
+    --orange-90: #452c07;
+    --orange-100: #170f02;
+
+    --yellow-10: #fefce6;
+    --yellow-20: #fdf7b5;
+    --yellow-30: #fbf283;
+    --yellow-40: #faed52;
+    --yellow-50: #f8e720;
+    --yellow-60: #dfce07;
+    --yellow-70: #ada005;
+    --yellow-80: #7c7204;
+    --yellow-90: #4a4502;
+    --yellow-100: #191701;
+
+    --green-10: #f3f9eb;
+    --green-20: #dcedc4;
+    --green-30: #c4e29d;
+    --green-40: #add675;
+    --green-50: #95ca4e;
+    --green-60: #7cb135;
+    --green-70: #608a29;
+    --green-80: #45621d;
+    --green-90: #293b12;
+    --green-100: #0e1406;
+
+    --turquoise-10: #ecf8f7;
+    --turquoise-20: #c6ebe7;
+    --turquoise-30: #a0ded8;
+    --turquoise-40: #7ad1c8;
+    --turquoise-50: #54c4b8;
+    --turquoise-60: #3bab9f;
+    --turquoise-70: #2e857b;
+    --turquoise-80: #215f58;
+    --turquoise-90: #143935;
+    --turquoise-100: #071312;
+
+    --blue-10: #e9f2fb;
+    --blue-20: #bdd7f4;
+    --blue-30: #91bced;
+    --blue-40: #65a1e6;
+    --blue-50: #3986df;
+    --blue-60: #206cc6;
+    --blue-70: #19549a;
+    --blue-80: #123c6e;
+    --blue-90: #0b2442;
+    --blue-100: #040c16;
+
+    --pink-10: #faeaf4;
+    --pink-20: #f0c1df;
+    --pink-30: #e698ca;
+    --pink-40: #dc6fb5;
+    --pink-50: #d346a0;
+    --pink-60: #b92c87;
+    --pink-70: #902369;
+    --pink-80: #67194b;
+    --pink-90: #3e0f2d;
+    --pink-100: #15050f;
+
+    --light-10: #f8f8f9;
+    --light-20: #ebebed;
+    --light-30: #dedee0;
+    --light-40: #d1d1d4;
+    --light-50: #c3c3c8;
+    --light-60: #b6b6bc;
+    --light-70: #a9a9af;
+    --light-80: #9c9ca3;
+    --light-90: #8e8e97;
+    --light-100: #81818a;
+
+    --dark-10: #75757e;
+    --dark-20: #686870;
+    --dark-30: #5c5c63;
+    --dark-40: #505056;
+    --dark-50: #434349;
+    --dark-60: #37373c;
+    --dark-70: #2b2b2e;
+    --dark-80: #1f1f21;
+    --dark-90: #121214;
+    --dark-100: #060607;
+}
+
+*{
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0em;
+    padding: 0;
+}
+body {
+    background-color: var(--dark-80);
+    color: var(--light-10);
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+a {
+    color: var(--light-10);
+    text-decoration: none;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 1fr 5.5fr;
+    height: 100vh;
+    width: 100%;
+}
+.header-left {
+    height: 100%;
+    background-color: var(--dark-90);
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 2px solid var(--dark-70);
+    display: grid;
+    grid-template-columns: 0.25fr 9.75fr;
+}
+.header-content {
+    margin: 1.5em 0 0 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--light-10);
+    display: block;
+}
+.posts {
+    padding-top: 1.25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow:auto;
+}
+.post {
+    margin: 1.25em auto 1.25em auto;
+    padding: 2.5em;
+    width: 50%;
+    border-radius: 10px;
+    background-color: var(--dark-60);
+    -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
+    -moz-box-shadow: 0px 10px 10px 0px var(--dark-90);
+    box-shadow: 0px 10px 10px 0px var(--dark-90);
+}
+.post-content {
+    margin: 25px 0 0 0;
+    font-size: larger;
+    font-weight: 500;
+}
+.post-info {
+    display: flex;    
+}
+.post-options {
+    color: var(--light-70);
+    margin-right: 2em;
+    font-weight: 550;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.post-options-like:hover {color: var(--red-40);}
+.post-options-reposts:hover {color: var(--blue-50);}
+.post-options-replies:hover {color: var(--yellow-40);}
+
+.post-options-container {
+    display: flex;
+    padding-top: 25px;
+}
+.post-pfp {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 1.5em;
+}
+
+@media screen and (max-width: 1320px) {
+    #header-text {
+        display: none;
+    }
+    .header-icons {
+        width: 100%;
+        height: 100%;
+
+    }
+    .header-left {
+        grid-template-columns: 1fr;
+    }
+    .header-content {
+        margin: 1.5em 2em 0 2em;
+        aspect-ratio: 1 /1;
+    }
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+}

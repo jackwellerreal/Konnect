@@ -4,10 +4,11 @@
         <title>Play Connect 4</title>
         <link rel="stylesheet" href="../styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-        <script src="../index.js"></script>
+        <script src="../utils/index.js"></script>
 
         <link rel="manifest" href="site.webmanifest">
         <meta name="viewport" width="100%">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta content="Play Connect 4" property="og:title" />
         <meta content="Play Connect Four Online" property="og:description" />
@@ -18,13 +19,16 @@
         <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon/32.jpg">
         <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon/16.jpg">
     </head>
-    <body id="login" onload="pageload()" style="overflow: hidden;">
+    <body id="login" style="overflow: hidden;">
         <div class="main-body">
             <div style="width:100%;">
-                <h1>Log In</h1>
+                <h1>Sign Up</h1>
                 
                 </br>
-                <form>
+                <form id="signin">
+                    <div class="login-input-container">
+                        <input type="text" id="username" class="login-input" placeholder="Username" autocomplete="off" required>
+                    </div>
                     <div class="login-input-container">
                         <input type="email" id="email" class="login-input" placeholder="Email" required>
                     </div>
@@ -33,11 +37,13 @@
                     </div>
     
                     </br>
-                    <button class="login-button">LOG IN</button>
+                    <p><input type="checkbox" class="login-input-tos" required> I am over 13 years old.</p>
+                    <button class="login-button">SIGN UP</button>
     
                     </br> 
+
                 </form>
-                <a href="/auth/signup.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i dont have an account</p></a>
+                <a href="/auth/login.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
             </div>
         </div>
     </body>
