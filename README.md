@@ -14,13 +14,3 @@ Twitter, Snapchat, & Instagram combined
 ## Authors
 
 - [@what-question-mark](https://www.github.com/what-question-mark)
-
-
-## Contributing
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please follow this project's `code of conduct`.
-
