@@ -175,7 +175,6 @@ a {
 .post-options-like:hover {color: var(--red-40);}
 .post-options-reposts:hover {color: var(--blue-50);}
 .post-options-replies:hover {color: var(--yellow-40);}
-
 .post-options-container {
     display: flex;
     padding-top: 25px;
@@ -186,7 +185,6 @@ a {
     border-radius: 10px;
     margin-right: 1.5em;
 }
-
 @media screen and (max-width: 1320px) {
     #header-text {
         display: none;

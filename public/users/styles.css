@@ -139,11 +139,9 @@ a {
     color: var(--light-10);
     display: block;
 }
-
 .main-center {
     padding-top: 1.25em;
 }
-
 .main-info {
     margin: 5em auto 0 auto;
     padding: 2.5em;
@@ -155,7 +153,6 @@ a {
     -moz-box-shadow: 0px 10px 10px 0px var(--dark-90);
     box-shadow: 0px 10px 10px 0px var(--dark-90);
 }
-
 .main-info-name {
     display: flex;
     margin: 1.25em 25px 2.5em 25px;
@@ -177,7 +174,6 @@ a {
     padding: 25px 25px;
     transition: ease 0.5s;
 }
-
 .main-info-pfp {
     height: 120px;
     width: 120px;
@@ -198,7 +194,6 @@ a {
     padding: 25px 25px;
     transition: ease 0.5s;
 }
-
 @media screen and (max-width: 1320px) {
     #header-text {
         display: none;
