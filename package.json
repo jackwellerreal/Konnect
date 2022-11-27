@@ -4,8 +4,7 @@
     "mongodb": "4.12"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "node utils/updateposts.js"
+    "start": "node index.js"
   },
   "name": "socialmediaapp",
   "description": "Twitter, Snapchat, & Instagram combined",

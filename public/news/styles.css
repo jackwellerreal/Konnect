@@ -142,7 +142,7 @@ a {
 .posts {
     padding-top: 1.25em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     overflow:auto;
 }
 .post {
