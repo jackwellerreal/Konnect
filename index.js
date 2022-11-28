@@ -15,7 +15,7 @@ app.get('/signup', (req, res) => {res.sendFile('auth/signup.html', {root: path.j
 
 fs.readdir("./api/", (err, files) => {
     files.forEach(file => {
-        app.get('/api/', (req, res) => {res.sendFile(`api/${file}`, {root: path.join(__dirname, 'api')});});
+        app.get(`/api/${file}`, (req, res) => {res.sendFile(`api/${file}`, {root: path.join(__dirname, 'api')});});
     });
 });
 
