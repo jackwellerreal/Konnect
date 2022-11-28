@@ -165,20 +165,6 @@ a {
 .post-info {
     display: flex;    
 }
-.post-options {
-    color: var(--light-70);
-    margin-right: 2em;
-    font-weight: 550;
-    cursor: pointer;
-    transition: ease 0.5s;
-}
-.post-options-like:hover {color: var(--red-40);}
-.post-options-reposts:hover {color: var(--blue-50);}
-.post-options-replies:hover {color: var(--yellow-40);}
-.post-options-container {
-    display: flex;
-    padding-top: 25px;
-}
 .post-pfp {
     height: 60px;
     width: 60px;
