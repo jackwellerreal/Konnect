@@ -9,26 +9,46 @@ const { MongoClient } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
-async function getUsers(apiKey, username) {
-    if (validateApiKey(apiKey) == true) {
+function initPromise() {
+    return new Promise(function(res, rej) {
+        res("initResolve");
+    })
+}
+
+async function getUser(apiKey, username) {
+    if (validateApiKey(apiKey)) {
         await client.connect();
         const db = client.db('konnect');
         const collection = db.collection('users');
         
         for await (let user of collection.find()) {
-            if (username == null) {
-                return collection.find();
-            } else {
-                if (user.username == username) {
-                    return user;
-                } else {
-                    return "Invalid user";
-                }
+            if (user.username == username) {
+                return user;
             }
         }
+
+        await client.close();
     } else {
         return "Invalid API key";
     }
 }
 
-module.exports = getUsers;
+async function getUsers(apiKey) {
+    if (validateApiKey(apiKey)) {
+        await client.connect();
+        const db = client.db('konnect');
+        const collection = db.collection('users');
+        
+        var users = [];
+        for await (let user of collection.find()) {
+            users.push(user.username);
+        }
+
+        await client.close();
+        return users;
+    } else {
+        return "Invalid API key";
+    }
+}
+
+module.exports = getUser, getUsers;

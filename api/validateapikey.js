@@ -7,17 +7,11 @@ const client = new MongoClient(uri);
 
 function validateApiKey(apiKey) {
     if (uuidValidate(apiKey)) {
-        client.connect();
-        const db = client.db('konnect');
-        const collection = db.collection('keys');
-        for (const keys of collection.find()) {
-            if (keys.key == process.env.OWNER_KEY) {
-                return owner;
-            } else {
-                return false;
-            }
+        if (apiKey == process.env.OWNER_KEY) {
+            return true
+        } else {
+            return "Invalid API key";
         }
-        db.close();
     } else {
         return "Invalid API key";
     }
