@@ -9,22 +9,23 @@ const { MongoClient } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
-async function getUsers(username, apiKey) {
+async function getUsers(apiKey, username) {
     if (validateApiKey(apiKey) == true) {
         await client.connect();
         const db = client.db('konnect');
         const collection = db.collection('users');
-        for await (const user of collection.find()) {
-            if (user.username == username) {
-                return user;
+        
+        for await (let user of collection.find()) {
+            if (username == null) {
+                return collection.find();
+            } else {
+                if (user.username == username) {
+                    return user;
+                } else {
+                    return "Invalid user";
+                }
             }
         }
-
-        const query = {};
-        const cursor = collection.find(query).sort({ _id: -1 }).limit(1);
-        const posts = await cursor.toArray();
-        db.close();
-        return posts;
     } else {
         return "Invalid API key";
     }
