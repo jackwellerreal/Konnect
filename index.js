@@ -13,11 +13,6 @@ app.get('/settings', (req, res) => {res.sendFile('settings/index.html', {root: p
 app.get('/login', (req, res) => {res.sendFile('auth/login.html', {root: path.join(__dirname, 'public')});});
 app.get('/signup', (req, res) => {res.sendFile('auth/signup.html', {root: path.join(__dirname, 'public')});});
 
-fs.readdir("./api/", (err, files) => {
-    files.forEach(file => {
-        app.get(`/api/${file}`, (req, res) => {res.sendFile(`api/${file}`, {root: path.join(__dirname, 'api')});});
-    });
-});
 
 app.listen(process.env.PORT || 3000);
 module.exports = app;
