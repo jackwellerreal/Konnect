@@ -121,12 +121,17 @@ a {
     margin: 10em auto 0 auto;
     padding: 2.5em 2em;
     width: 25%;
-    height: 18em;
     border-radius: 10px;
     background-color: var(--dark-60);
     -webkit-box-shadow: 0px 10px 10px 0px var(--dark-90);
     -moz-box-shadow: 0px 10px 10px 0px var(--dark-90);
     box-shadow: 0px 10px 10px 0px var(--dark-90);
+}
+#login .main-body {
+    height: 18em;
+}
+#signin .main-body {
+    height: 22em;
 }
 .login-input-container {
     display: block;

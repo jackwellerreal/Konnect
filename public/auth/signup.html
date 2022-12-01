@@ -4,7 +4,9 @@
         <title>Konnect - Sign Up</title>
         <link rel="stylesheet" href="./styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-        <script src="../utils/index.js"></script>
+        <script src="../../utils/updateusers.js"></script>
+        <script src="../../utils/validateapikey.js"></script>
+        <script src="https://unpkg.com/node-forge@1.0.0/dist/forge.min.js"></script>
 
         <link rel="manifest" href="../../site.webmanifest">
         <meta name="viewport" width="100%">
@@ -18,7 +20,7 @@
 
         <link rel="icon" type="image/jpg" sizes="32x32" href="../img/favicon.jpg">
     </head>
-    <body id="login" style="overflow: hidden;">
+    <body id="signin" style="overflow: hidden;">
         <div class="main-body">
             <div style="width:100%;">
                 <h1>Sign Up</h1>
@@ -37,12 +39,12 @@
     
                     </br>
                     <p><input type="checkbox" class="login-input-tos" required> I am over 13 years old.</p>
-                    <button class="login-button">SIGN UP</button>
+                    <button class="login-button" onclick="onLogIn()">SIGN UP</button>
     
                     </br> 
 
                 </form>
-                <a href="/auth/login.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
+                <a href="login.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
             </div>
         </div>
     </body>
