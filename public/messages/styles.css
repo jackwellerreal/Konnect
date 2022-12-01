@@ -215,12 +215,4 @@ a {
         margin: 1.5em 2em 0 2em;
         aspect-ratio: 1 /1;
     }
-    .posts {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .posts {
-        grid-template-columns: 1fr;
-    }
 }

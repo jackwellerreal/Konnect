@@ -144,7 +144,7 @@ a {
 }
 .posts {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     overflow:auto;
 }
 .post {
@@ -186,9 +186,6 @@ a {
     .header-content {
         margin: 1.5em 2em 0 2em;
         aspect-ratio: 1 /1;
-    }
-    .posts {
-        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width: 1000px) {
