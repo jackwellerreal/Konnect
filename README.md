@@ -1,4 +1,4 @@
-# Social Media App (Name not final) 📱
+# Konnect 📱
 
 Twitter, Snapchat, & Instagram combined
 
