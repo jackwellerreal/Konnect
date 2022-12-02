@@ -1,19 +1,10 @@
-/**
-get all users from the mongodb database and return them as JSON objects
-this is used by the api to get info on certain users
-*/
 const validateApiKey = require('./validateapikey.js');
+const moment = require('moment');
 require('dotenv').config()
 
 const { MongoClient } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
-
-function initPromise() {
-    return new Promise(function(res, rej) {
-        res("initResolve");
-    })
-}
 
 async function getUser(apiKey, username) {
     if (validateApiKey(apiKey)) {
