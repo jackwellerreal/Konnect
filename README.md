@@ -71,11 +71,11 @@ We have many more features which would take to long to list here. Check out the 
 
 Our api is currently private, so we can improve the code without worrying about breaking third-party apps. However, we will be releasing it once the app is released, so you can make your own third-party apps with it.
 
-### Get user
+### Get user 👤
 
 Gets a users information.
 
-#### Example
+#### Example 
 
 ```js
 const getuser = require('https://konnect-api.herokuapp.com/api/getuser')
@@ -99,7 +99,7 @@ getUser(apikey, username).then((result) => {
 */
 ```
 
-### Get users
+### Get users 👥
 
 Gets a list of users.
 
@@ -117,7 +117,7 @@ getUser(apikey).then((result) => {
 */
 ```
 
-### Get posts
+### Get posts 💬
 
 Gets a list of posts.
 
@@ -126,12 +126,26 @@ Gets a list of posts.
 ```js
 const getposts = require('https://konnect-api.herokuapp.com/api/getposts')
 
-getUser(apikey).then((result) => {
+getPosts(apikey).then((result) => {
     console.log(result);
 });
 ```
 
-### Insert user
+### Get news 📰
+
+Gets a list of news.
+
+#### Example
+
+```js
+const getposts = require('https://konnect-api.herokuapp.com/api/getposts')
+
+getNews(apikey).then((result) => {
+    console.log(result);
+});
+```
+
+### Insert user 👤➕
 
 Inserts a user into the database.
 
@@ -149,7 +163,7 @@ Post inserted
 */
 ```
 
-### Update user
+### Update user 👤✏
 
 Updates a user in the database.
 
@@ -167,7 +181,7 @@ Post updated
 */
 ```
 
-### Delete user
+### Delete user 👤❌
 
 Deletes a user from the database.
 
@@ -185,7 +199,7 @@ User deleted
 */
 ```
 
-### Insert post
+### Insert post 💬➕
 
 Inserts a post into the database.
 
@@ -203,7 +217,7 @@ Post inserted
 */
 ```
 
-### Insert News
+### Insert News 📰➕
 
 Inserts a news post into the database.
 
@@ -220,5 +234,7 @@ insertNews(apiKey, content).then((result) => {
 Post inserted
 */
 ```
+
+---
 
 ## Thats all for now! 🎉
