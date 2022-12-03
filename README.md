@@ -58,7 +58,7 @@ We have real-time updates, so you can see your friends' posts and messages as so
 
 ### Customizable theme 🎨
 
-We have a customizable theme, so you can change the colors of the app to your liking.
+We have a customizable theme page, so you can change the colors of the app to your liking.
 
 ### And more! 🎉
 
