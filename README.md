@@ -1,4 +1,4 @@
-![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)
+[![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)](https://www.madeinaustralia.com.au/)
 
 # Konnect 📱
 
@@ -234,7 +234,5 @@ insertNews(apiKey, content).then((result) => {
 Post inserted
 */
 ```
-
----
 
 ## Thats all for now! 🎉
