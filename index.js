@@ -3,9 +3,9 @@ const app = express();
 const path = require('path');
 require('dotenv').config()
 
-app.use(express.static('public'))
-
 // Pages
+
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {res.sendFile('index.html', {root: path.join(__dirname, 'public')});});
 app.get('/news', (req, res) => {res.sendFile('news/index.html', {root: path.join(__dirname, 'public')});});
