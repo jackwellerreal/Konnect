@@ -56,4 +56,4 @@ async function insertNews(apiKey, content) {
     }
 }
 
-module.exports = insertPost, insertNews;
+module.exports = { insertPost, insertNews };

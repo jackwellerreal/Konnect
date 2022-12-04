@@ -42,4 +42,4 @@ async function getUsers(apiKey) {
     }
 }
 
-module.exports = getUser, getUsers;
+module.exports = { getUser, getUsers };

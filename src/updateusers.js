@@ -82,4 +82,4 @@ async function deleteUser(apiKey, username) {
     }
 }
 
-module.exports = updateUser, insertUser, deleteUser;
+module.exports = { insertUser, updateUser, deleteUser };
