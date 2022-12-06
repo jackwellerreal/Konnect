@@ -4,6 +4,8 @@
        <title>Konnect</title>
        <link rel="stylesheet" href="./styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="../utils/updateposts.js" type="module"></script>
 
         <link rel="manifest" href="../site.webmanifest">
         <meta name="viewport" width="100%">
@@ -43,8 +45,8 @@
             <div class="main-center">
                 <div class="create-post">
                     <div class="create-post-input-container">
-                        <input type="text" class="create-post-input" placeholder="What's on your mind?" id="create-post-input">
-                        <button class="create-post-button" onclick="">Post</button>
+                        <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
+                        <button class="create-post-button" id="create-post-button">Post</button>
                     </div>
                 </div>
                 <div class="posts">
