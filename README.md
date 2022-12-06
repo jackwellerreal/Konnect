@@ -12,32 +12,36 @@ All your favorite social media, combined.
 
 <details open>
     <summary><h2>Acknowledgements 📜</h2></summary>
-    - [Twitter](https://twitter.com/)
-    - [Snapchat](https://snapchat.com/)
-    - [ExpressJS](https://expressjs.com/)
-    - [MongoDB](https://www.mongodb.com/)
-    - [Iconify](https://iconify.design/)
+    <ul>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+        <li><a href="https://snapchat.com/">Snapchat</a></li>
+        <li><a href="https://vercel.com/">Vercel</a></li>
+        <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+        <li><a href="https://iconify.design/">Iconify</a></li>
+    </ul>
 </details>
 
 <details open>
     <summary><h2>Authors 👥</h2></summary>
-    - [@what-question-mark](https://www.github.com/what-question-mark)  
+    <ul>
+        <li><a href="https://www.github.com/what-question-mark">@what-question-mark</a></li>
+    </ul> 
 </details>
 
 <details open>
     <summary><h2>Feedback 📝</h2></summary>
-    If you have any feedback, please create a post in the [discussions tab](https://github.com/What-Question-Mark/Konnect/discussions/new?category=feedback).
+    If you have any feedback, please create a post in the <a href="https://github.com/What-Question-Mark/Konnect/discussions/new?category=feedback">discussions tab</a>.
 </details>
 
 <details open>
     <summary><h2>Contributing 🤝</h2></summary>
     Contributions are always welcome!
-    See `contributing.md` for ways to get started. Please adhere to this project's `code of conduct`.
+    See <code>contributing.md</code> for ways to get started. Please adhere to this project's <code>code of conduct</code>.
 </details>
 
 <details open>
     <summary><h2>License 📝</h2></summary>
-    If you want to use this a part of this code, please contact [@what-question-mark](https://www.github.com/what-question-mark) to negotiate a private license.
+    If you want to use this a part of this code, please contact <a href="https://www.github.com/what-question-mark">@what-question-mark</a> to negotiate a private license.
 </details>
 
 <details open>
