@@ -1,29 +1,32 @@
 {
-  "dependencies": {
-    "axios": "^1.2.0",
-    "dotenv": "^16.0.3",
-    "emoji-datasource-twitter": "^14.0.0",
-    "express": "^4.18.2",
-    "moment": "^2.29.4",
-    "mongodb": "^4.12.1",
-    "uuid": "^9.0.0"
+  "name": "konnect",
+  "description": "All your favorite social media, combined.",
+  "version": "1.0",
+  "homepage": "https://github.com/What-Question-Mark/Konnect",
+  "main": "index.js",
+  "browser": "./public/index.html",
+  "packageManager": "npm@8.5.0",
+  "bugs": {
+      "url": "https://github.com/What-Question-Mark/Konnect/discussions/new?category=issues"
+  },
+  "author": {
+      "name": "what-question-mark",
+      "url": "https://github.com/what-question-mark"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/What-Question-Mark/Konnect.git"
   },
   "scripts": {
-    "start": "node index.js"
+      "start": "node index.js"
   },
-  "name": "konnect",
-  "description": "Twitter, Snapchat, & Instagram combined",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/What-Question-Mark/socialmediaapp.git"
-  },
-  "keywords": [],
-  "author": "@What-Question-Mark",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/What-Question-Mark/socialmediaapp/issues"
-  },
-  "homepage": "https://github.com/What-Question-Mark/socialmediaapp#readme"
+  "dependencies": {
+      "axios": "^1.2.0",
+      "dotenv": "^16.0.3",
+      "emoji-datasource-twitter": "^14.0.0",
+      "express": "^4.18.2",
+      "moment": "^2.29.4",
+      "mongodb": "^4.12.1",
+      "uuid": "^9.0.0"
+  }
 }
