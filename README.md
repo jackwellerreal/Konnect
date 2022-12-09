@@ -2,7 +2,7 @@
 
 # Konnect 📱
 
-All your favorite social media, combined.
+Konnect is a non for profit social media app with a goal of helping people connect with each other without contantly worrying about getting likes and followers. It is currently in beta. If you want to contribute to the project, please see the [contributing](#contributing) section.
 
 - ✅ [Twitter-like feed](#twitter-like-feed)
 - ✅ [Snapchat-like DMs](#snapchat-like-dms)
