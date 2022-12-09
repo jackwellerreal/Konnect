@@ -5,7 +5,9 @@
        <link rel="stylesheet" href="./styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+		<script src="index.js"></script>
         <link rel="manifest" href="../site.webmanifest">
         <meta name="viewport" width="100%">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +45,7 @@
             <div class="create-post">
                 <div class="create-post-input-container">
                     <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
-                    <button class="create-post-button" id="create-post-button">Post</button>
+                    <button class="create-post-button" id="create-post-button" onclick="create_post_button()">Post</button>
                 </div>
             </div>
             <div class="posts">
@@ -54,7 +56,7 @@
                             <h2>what? <iconify-icon inline icon="fa6-solid:circle-check"></iconify-icon></h2><h4 style="padding-top: 0.25em; color: var(--light-60);">@whatqm</h4>
                         </div>
                     </div>
-                    <p class="post-content">hi</p>
+                    <p class="post-content">Hi</p>
                 </div>
             </div>
         </div> 
