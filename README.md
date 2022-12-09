@@ -24,6 +24,7 @@ Konnect is a non for profit social media app with a goal of helping people conne
 <h2>Authors 👥</h2>
 <ul>
     <li><a href="https://www.github.com/what-question-mark">@what-question-mark</a></li>
+    <li><a href="https://www.github.com/leaf456">@leaf456</a></li>
 </ul> 
 
 
