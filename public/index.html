@@ -5,7 +5,6 @@
        <link rel="stylesheet" href="./styles.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-        <script src="../utils/updateposts.js" type="module"></script>
 
         <link rel="manifest" href="../site.webmanifest">
         <meta name="viewport" width="100%">
@@ -19,7 +18,7 @@
 
         <link rel="icon" type="image/jpg" sizes="32x32" href="img/logo.svg">
     </head>
-    <body id="home">        
+    <body id="home">   
         <div class="main-body">
             <div class="header-left">
                 <div id="header-icons">
@@ -27,7 +26,6 @@
                     <p class="header-content"><a href="news/"><iconify-icon inline icon="fa6-solid:newspaper"></iconify-icon></a></p>
                     <p class="header-content"><a href="messages/"><iconify-icon inline icon="fa6-solid:message"></iconify-icon></a></p>
                     <p class="header-content"><a href="themes/"><iconify-icon inline icon="fa6-solid:paintbrush"></iconify-icon></a></p>
-                    <p class="header-content"><a href="extra/"><iconify-icon inline icon="fa6-solid:address-card"></iconify-icon></a></p>
                     <p class="header-content"><a href=""><iconify-icon inline icon="fa6-solid:face-smile"></iconify-icon></a></p>   
                     <p class="header-content"><a href="settings/"><iconify-icon inline icon="fa6-solid:code-compare"></iconify-icon></a></p>
                 </div>
@@ -36,31 +34,29 @@
                     <p class="header-content"><a href="news/"> NEWS</a></p>
                     <p class="header-content"><a href="messages/"> MESSAGES</a></p>
                     <p class="header-content"><a href="themes/"> THEMES</a></p>
-                    <p class="header-content"><a href="extra/"> EXTRA</a></p>
                     <p class="header-content"><a href=""> PROFILE</a></p>   
                     <p class="header-content"><a href="settings/"> SETTINGS</a></p>           
-                </div>
-            </div>
-
-            <div class="main-center">
-                <div class="create-post">
-                    <div class="create-post-input-container">
-                        <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
-                        <button class="create-post-button" id="create-post-button">Post</button>
-                    </div>
-                </div>
-                <div class="posts">
-                    <div class="post">
-                        <div class="post-info">
-                            <img src="img/pfp/whatqm.png" class="post-pfp">
-                            <div>
-                                <h2>what? <iconify-icon inline icon="fa6-solid:circle-check"></iconify-icon></h2><h4 style="padding-top: 0.25em; color: var(--light-60);">@whatqm</h4>
-                            </div>
-                        </div>
-                        <p class="post-content">hi</p>
-                    </div>
-                </div>
             </div>
         </div>
+
+        <div class="main-center">
+            <div class="create-post">
+                <div class="create-post-input-container">
+                    <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
+                    <button class="create-post-button" id="create-post-button">Post</button>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="post">
+                    <div class="post-info">
+                        <img src="img/pfp/whatqm.png" class="post-pfp">
+                        <div>
+                            <h2>what? <iconify-icon inline icon="fa6-solid:circle-check"></iconify-icon></h2><h4 style="padding-top: 0.25em; color: var(--light-60);">@whatqm</h4>
+                        </div>
+                    </div>
+                    <p class="post-content">hi</p>
+                </div>
+            </div>
+        </div> 
     </body>
 </html>
