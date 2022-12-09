@@ -23,6 +23,18 @@ function create_post_button_notification(type, text, body) {
 function create_post_button() {
 	const post_content = document.getElementById("create-post-input").value
 	if (post_content != "" && post_content != null) {
-		create_post_button_notification("success", "Posted", "Your post has been posted.")
-	} else {create_post_button_notification("error", "Error", "You can not post nothing!")}
+		fetch("/post")
+			.then(function(res) {
+				if (res.status == 201 || res.status == 200) {
+					create_post_button_notification("success", "Posted", "Your post has been posted.")
+				} else {
+					create_post_button_notification("error", "Failed", `Failed to post: http error code: ${res.status}`)
+				}
+			}
+			)
+			.then().catch(function(err) {
+				console.log(err)
+			})
+		
+	} else {create_post_button_notification("error", "Error", "You can't post nothing!")}
 }
