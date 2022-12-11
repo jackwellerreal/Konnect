@@ -38,3 +38,13 @@ function create_post_button() {
 		
 	} else {create_post_button_notification("error", "Error", "You can't post nothing!")}
 }
+function onload() {
+	scrollUp();
+	loadStore();
+}
+
+function scrollUp() {
+	window.scrollTo(0, 0);
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}

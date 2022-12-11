@@ -8,10 +8,11 @@ require('dotenv').config()
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {res.sendFile('index.html', {root: path.join(__dirname, 'public')});});
-app.get('/news', (req, res) => {res.sendFile('news/index.html', {root: path.join(__dirname, 'public')});});
-app.get('/messages', (req, res) => {res.sendFile('messages/index.html', {root: path.join(__dirname, 'public')});});
-app.get('/settings', (req, res) => {res.sendFile('settings/index.html', {root: path.join(__dirname, 'public')});});
+app.get('/app', (req, res) => {res.sendFile('app/index.html', {root: path.join(__dirname, 'public')});});
+app.get('/app/news', (req, res) => {res.sendFile('app/news/index.html', {root: path.join(__dirname, 'public')});});
+app.get('/app/messages', (req, res) => {res.sendFile('app/messages/index.html', {root: path.join(__dirname, 'public')});});
+app.get('/app/themes', (req, res) => {res.sendFile('app/themes/index.html', {root: path.join(__dirname, 'public')});});
+app.get('/app/settings', (req, res) => {res.sendFile('app/settings/index.html', {root: path.join(__dirname, 'public')});});
 app.get('/login', (req, res) => {res.sendFile('auth/login.html', {root: path.join(__dirname, 'public')});});
 app.get('/signup', (req, res) => {res.sendFile('auth/signup.html', {root: path.join(__dirname, 'public')});});
 
