@@ -2,35 +2,47 @@
 
 :root {
     /* Colors */
-    --danger-10: #fce9ec;
-    --danger-20: #f5bcc5;
-    --danger-30: #ef909f;
-    --danger-40: #e86378;
-    --danger-50: #e23752;
+    --red-10: #ffe5e5;
+    --red-20: #ffb3b3;
+    --red-30: #ff8080;
+    --red-40: #ff4d4d;
+    --red-50: #ff1a1a;
 
-    --warning-10: #fefce6;
-    --warning-20: #fdf7b5;
-    --warning-30: #fbf283;
-    --warning-40: #faed52;
-    --warning-50: #f8e720;
+    --orange-10: #ffece5;
+    --orange-20: #ffc7b3;
+    --orange-30: #ffa280;
+    --orange-40: #ff7d4d;
+    --orange-50: #ff581a;
 
-    --success-10: #f3f9eb;
-    --success-20: #dcedc4;
-    --success-30: #c4e29d;
-    --success-40: #add675;
-    --success-50: #95ca4e;
+    --yellow-10: #ffffe5;
+    --yellow-20: #fffeb3;
+    --yellow-30: #fffe80;
+    --yellow-40: #fffd4d;
+    --yellow-50: #fffc1a;
 
-    --info-10: #e9f2fb;
-    --info-20: #bdd7f4;
-    --info-30: #91bced;
-    --info-40: #65a1e6;
-    --info-50: #3986df;
+    --green-10: #ecf9ef;
+    --green-20: #c5edcf;
+    --green-30: #9ee1b0;
+    --green-40: #77d590;
+    --green-50: #50c970;
+
+    --blue-10: #e7f4fd;
+    --blue-20: #b7dffa;
+    --blue-30: #87caf7;
+    --blue-40: #58b5f4;
+    --blue-50: #28a0f1;
+
+    --purple-10: #f6ebfa;
+    --purple-20: #e3c2f0;
+    --purple-30: #d099e6;
+    --purple-40: #bd70dc;
+    --purple-50: #aa47d2;
 
     --main-bg-dark: #3c3d41;
     
     --header-color: #fff;
-    --subheader-color: ghostwhite;
-    --text-color: ghostwhite;
+    --subheader-color: #000;
+    --text-color: #000;
 }
 
 * {
@@ -40,12 +52,6 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     color: var(--main-text-color);
-}
-body {
-    background: url('background.svg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 /* Header */
@@ -66,7 +72,7 @@ header {
     width: 50px;
 }
 .navigation a {
-    color: var(--text-color);
+    color: var(--header-color);
     text-decoration: none;
     font-size: 1.25em;
     padding-left: 30px;
@@ -82,8 +88,12 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 100px 300px 100px 300px;
+    background: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .main-body h1 {
     color: var(--header-color);
@@ -109,10 +119,13 @@ header {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     min-height: 50vh;
-    padding: 0 300px 100px 300px;
+    padding: 50px 300px 50px 300px;
+}
+.feature:nth-child(even) {
+    background-color: #f6f6f6;
 }
 .feature h1 {
-    color: var(--header-color);
+    color: var(--subheader-color);
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -120,7 +133,7 @@ header {
     margin-bottom: 30px;
 }
 .feature p {
-    color: var(--header-color);
+    color: var(--text-color);
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 1px;

@@ -16,79 +16,79 @@ const themes = `[
         "name": "Dark Mode",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/default/dark/styles.css"
+        "path": "/css/default/dark/styles.css"
     },
     {   
         "name": "Light Mode",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/default/light/styles.css"
+        "path": "/css/default/light/styles.css"
     },
     {   
         "name": "High Contrast",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/default/highcontrast/styles.css"
+        "path": "/css/default/highcontrast/styles.css"
     },
     {   
         "name": "Classic",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/default/classic/styles.css"
+        "path": "/css/default/classic/styles.css"
     },
     {   
         "name": "Pitch Black",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/colours/black/styles.css"
+        "path": "/css/colours/black/styles.css"
     },
     {   
         "name": "Bright White",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/colours/white/styles.css"
+        "path": "/css/colours/white/styles.css"
     },
     {   
         "name": "Discord",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/social/discord/styles.css"
+        "path": "/css/social/discord/styles.css"
     },
     {   
         "name": "Github",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/social/github/styles.css"
+        "path": "/css/social/github/styles.css"
     },
     {   
         "name": "Google",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/social/google/styles.css"
+        "path": "/css/social/google/styles.css"
     },
     {   
         "name": "Reddit",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/social/reddit/styles.css"
+        "path": "/css/social/reddit/styles.css"
     },
     {   
         "name": "Bad HTML",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/themes/social/badhtml/styles.css"
+        "path": "/css/social/badhtml/styles.css"
     },
     {   
         "name": "Mount Fuji",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/examples/background/styles.css"
+        "path": "/css/background/styles.css"
     },
     {   
         "name": "Bad HTML",
         "author": "whatqm",
         "license": "MIT",
-        "path": "https://what-question-mark.github.io/Konnect-themes/examples/colour/styles.css"
+        "path": "/css/colour/styles.css"
     }
 ]`;
 
