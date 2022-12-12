@@ -52,8 +52,8 @@ We have a Snapchat-like DM system, where you can send messages to your friends i
 <h2>Real-time 📡</h2>
 We have real-time updates, so you can see your friends' posts and messages as soon as they are posted.
     
-<h2>Customizable theme 🎨</h2>
-We have a customizable theme page, so you can change the colors of the app to your liking.
+<h2>Customizable themes 🎨</h2>
+We have a custom theme page, so you can change the colors of the app to your liking.
     
 <h2>And more! 🎉</h2>
 We have many more features which would take to long to list here. Check out the app to see them all!
