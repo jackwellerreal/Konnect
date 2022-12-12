@@ -45,6 +45,12 @@
     --text-color: #000;
 }
 
+body {
+    background: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 * {
     margin: 0;
     padding: 0;
@@ -90,10 +96,9 @@ header {
     width: 100%;
     min-height: 100vh;
     padding: 100px 300px 100px 300px;
-    background: url('background.svg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+}
+.nogrid {
+    display: block;
 }
 .main-body h1 {
     color: var(--header-color);
@@ -104,16 +109,16 @@ header {
     margin-bottom: 30px;
 }
 .main-body h2 {
-    color: var(--subheader-color);
+    color: var(--header-color);
     font-size: 2em;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* Features */
+
 .feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,11 +126,8 @@ header {
     min-height: 50vh;
     padding: 50px 300px 50px 300px;
 }
-.feature:nth-child(even) {
-    background-color: #f6f6f6;
-}
 .feature h1 {
-    color: var(--subheader-color);
+    color: var(--header-color);
     font-size: 48px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -133,7 +135,7 @@ header {
     margin-bottom: 30px;
 }
 .feature p {
-    color: var(--text-color);
+    color: var(--header-color);
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 1px;
