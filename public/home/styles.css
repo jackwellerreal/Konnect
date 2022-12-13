@@ -97,9 +97,6 @@ header {
     min-height: 100vh;
     padding: 100px 300px 100px 300px;
 }
-.nogrid {
-    display: block;
-}
 .main-body h1 {
     color: var(--header-color);
     font-size: 4em;
