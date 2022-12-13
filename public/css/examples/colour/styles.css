@@ -1,28 +1,40 @@
 :root { 
     /* Colors */
-    --danger-10: #fce9ec;
-    --danger-20: #f5bcc5;
-    --danger-30: #ef909f;
-    --danger-40: #e86378;
-    --danger-50: #e23752;
+    --red-10: #f8d5da;
+    --red-20: #f1abb4;
+    --red-30: #eb828f;
+    --red-40: #e45869;
+    --red-50: #dd2e44;
 
-    --warning-10: #fefce6;
-    --warning-20: #fdf7b5;
-    --warning-30: #fbf283;
-    --warning-40: #faed52;
-    --warning-50: #f8e720;
+    --orange-10: #fde9ce;
+    --orange-20: #fbd39e;
+    --orange-30: #f8bc6d;
+    --orange-40: #f6a63d;
+    --orange-50: #f4900c;
 
-    --success-10: #f3f9eb;
-    --success-20: #dcedc4;
-    --success-30: #c4e29d;
-    --success-40: #add675;
-    --success-50: #95ca4e;
+    --yellow-10: #fff5de;
+    --yellow-20: #feeabc;
+    --yellow-30: #fee09b;
+    --yellow-40: #fdd579;
+    --yellow-50: #fdcb58;
 
-    --info-10: #e9f2fb;
-    --info-20: #bdd7f4;
-    --info-30: #91bced;
-    --info-40: #65a1e6;
-    --info-50: #3986df;
+    --green-10: #e4efde;
+    --green-20: #c9e0bd;
+    --green-30: #aed09b;
+    --green-40: #93c17a;
+    --green-50: #78b159;
+
+    --blue-10: #ddeefc;
+    --blue-20: #bbdef8;
+    --blue-30: #99cdf5;
+    --blue-40: #77bdf1;
+    --blue-50: #55acee;
+
+    --purple-10: #eee8f7;
+    --purple-20: #ddd2ef;
+    --purple-30: #ccbbe6;
+    --purple-40: #bba5de;
+    --purple-50: #aa8ed6;
 
     /* Theme Colors */
     --text: #000;
