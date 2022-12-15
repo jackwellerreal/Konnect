@@ -1,5 +1,4 @@
 const validateApiKey = require('./validateapikey.js');
-const hashPassword = require('./hashPassword.js');
 const moment = require('moment');
 require('dotenv').config()
 
@@ -25,7 +24,7 @@ async function insertUser(apiKey, username, email, password) {
                     "verified":false,
                     "credentials":{
                         "email":email,
-                        "password":hashPassword(password)
+                        "password":password
                     }
                 });
                 return "User inserted";
@@ -47,7 +46,7 @@ async function updateUser(apiKey, username, email, password, displayname, bio) {
         for await (let user of collection.find()) {
             if (user.username == username) {
                 user.credentials.email = email;
-                user.credentials.password = hashPassword(password);
+                user.credentials.password = password;
                 if(displayname != "") {user.displayname = displayname};
                 if(bio != "") {user.bio = bio}
                 collection.updateOne({ username: username },{ $set: { credentials: user.credentials } });

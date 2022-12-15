@@ -43,8 +43,10 @@
             <div class="main-center">
                 <div class="create-post">
                     <div class="create-post-input-container">
-                        <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
-                        <button class="create-post-button" id="create-post-button" onclick="create_post_button()">Post</button>
+                        <form id="create-post" action="/login" method="post">
+                            <input type="text" class="create-post-input" placeholder="What's on your mind?" maxlength="50" id="create-post-input">
+                            <input type="submit" class="create-post-button" id="create-post-button">
+                        </form>
                     </div>
                 </div>
                 <div class="posts">

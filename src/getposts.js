@@ -24,4 +24,4 @@ async function getPosts(apiKey) {
     }
 }
 
-module.exports = { getPosts };
+module.exports = getPosts;
