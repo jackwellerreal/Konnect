@@ -155,4 +155,12 @@ app.post('/login', (req, res) => {
     })
 });
 
+app.post('/createpost', (req, res) => {
+    const { createpostinput } = req.body;
+
+    updateposts.insertPost(process.env.API_KEY, req.cookies.AuthToken, createpostinput).then(
+        res.redirect('/app')
+    )
+});
+
 app.listen(process.env.PORT || 3000 , () => console.log('Server started on port 3000: http://localhost:3000'));
