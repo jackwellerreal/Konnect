@@ -89,11 +89,16 @@ header {
 
 /* Main Body */
 
-.main-body {
+#home .main-body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
     min-height: 100vh;
+    padding: 100px 300px 100px 300px;
+}
+#about .main-body {
+    width: 100%;
+    min-height: 50vh;
     padding: 100px 300px 100px 300px;
 }
 .main-body h1 {
@@ -146,6 +151,28 @@ header {
     display: block;
     width: 50%;
 }
+
+/* Acknowledgements */
+
+.acknowledgement {
+    width: 100%;
+    min-height: 50vh;
+    padding: 50px 300px 50px 300px;
+}
+.acknowledgement li {
+    color: var(--header-color);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    margin-bottom: 30px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.acknowledgement a {
+    text-decoration: none;
+}
+
 /* Scroll bar */
 
 ::-webkit-scrollbar {

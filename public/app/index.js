@@ -13,7 +13,7 @@ function create_post_button_notification(type, text, body) {
 		showIcon: true,
 		showCloseButton: true,
 		autoclose: true,
-		autotimeout: 3000,
+		autotimeout: 1500,
 		gap: 20,
 		distance: 20,
 		type: 1,
