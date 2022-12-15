@@ -21,46 +21,46 @@ app.use(express.static(__dirname + '/public'));
 /* Home */
 
 app.get('/', (req, res) => {
-    res.sendFile('home/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/about', (req, res) => {
-    res.sendFile('home/about/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/about/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/about/press', (req, res) => {
-    res.sendFile('home/about/press/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/about/press/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/about/branding', (req, res) => {
-    res.sendFile('home/about/branding/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/about/branding/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/about/acknowledgements', (req, res) => {
-    res.sendFile('home/about/acknowledgements/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/about/acknowledgements/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/support', (req, res) => {
-    res.sendFile('home/support/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/support/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/beta', (req, res) => {
-    res.sendFile('home/about/beta/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/home/about/beta/index.html', {root: path.join(__dirname, 'public')});
 });
 
 /* App */
 
 app.get('/app', (req, res) => {
-    res.sendFile('app/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/news', (req, res) => {
-    res.sendFile('app/news/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/news/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/messages', (req, res) => {
-    res.sendFile('app/messages/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/messages/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/themes', (req, res) => {
-    res.sendFile('app/themes/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/themes/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/settings', (req, res) => {
-    res.sendFile('app/settings/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/settings/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/users/:user', (req, res) => {
-    res.sendFile('app/users/index.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/app/users/index.html', {root: path.join(__dirname, 'public')});
 });
 
 /* API */
@@ -104,7 +104,7 @@ app.get('/logout', (req, res) => {
     res.redirect('/login');
 });
 app.get('/signup', (req, res) => {
-    res.sendFile('auth/singup.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/auth/singup.html', {root: path.join(__dirname, 'public')});
 });
 app.post('/signup', (req, res) => {
     const { username, email, password } = req.body;
@@ -131,7 +131,7 @@ app.post('/signup', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile('auth/login.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/auth/login.html', {root: path.join(__dirname, 'public')});
 });
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
