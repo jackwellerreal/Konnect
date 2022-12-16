@@ -117,8 +117,10 @@ app.post('/signup', (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile('/auth/login.html', {root: path.join(__dirname, 'public')});
+    res.send('coming soon™')
+    //res.sendFile('/auth/login.html', {root: path.join(__dirname, 'public')});
 });
+/*
 app.post('/login', (req, res) => {
     getuser.getUsers().then((result) => {
         if (result.includes(req.body.username)) {
@@ -141,6 +143,7 @@ app.post('/login', (req, res) => {
         }
     })
 });
+*/
 
 app.post('/createpost', (req, res) => {
     getuser.getUsers().then((result) => {
