@@ -10,15 +10,11 @@ const multer = require('multer');
 const crypto = require('crypto');
 require('dotenv').config()
 
-try {
-    const getuser = require('./src/getuser');
-    const getposts = require('./src/getposts');
-    const hashpassword = require('./src/hashpassword');
-    const updateposts = require('./src/updateposts');
-    const updateusers = require('./src/updateusers');
-} catch (e) {
-    console.log('Error loading modules: ' + e);
-}
+const getuser = require('./src/getuser.js');
+const getposts = require('./src/getposts.js');
+const hashpassword = require('./src/hashpassword.js');
+const updateposts = require('./src/updateposts.js');
+const updateusers = require('./src/updateusers.js');
 
 const app = express();
 const upload = multer();
