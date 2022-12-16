@@ -2,18 +2,19 @@ const express = require('express');
 const axios = require('axios');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser')
+const multer = require('multer');
 const crypto = require('crypto');
 require('dotenv').config()
 
-const getuser = require('./src/getuser');
-const getposts = require('./src/getposts');
-const hashpassword = require('./src/hashpassword');
-const updateposts = require('./src/updateposts');
-const updateusers = require('./src/updateusers');
-const validateApiKey = require('./src/validateapikey');
+const getuser = require('../src/getuser');
+const getposts = require('../src/getposts');
+const hashpassword = require('../src/hashpassword');
+const updateposts = require('../src/updateposts');
+const updateusers = require('../src/updateusers');
 
 const app = express();
+const upload = multer();
 const authTokens = {};
 
 app.use(express.static(__dirname + '/public'));
@@ -92,39 +93,22 @@ app.get('/api/deleteuser', (req, res) => {
 
 /* Auth */
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieParser());
+app.use(upload.array()); 
+app.use(express.static('public'));
 
-
-
-app.get('/logout', (req, res) => {
-    const { authToken } = req.cookies;
-    delete authTokens[authToken];
-    res.clearCookie('AuthToken');
-    res.redirect('/login');
-});
 app.get('/signup', (req, res) => {
-    res.sendFile('/auth/singup.html', {root: path.join(__dirname, 'public')});
+    res.sendFile('/auth/signup.html', {root: path.join(__dirname, 'public')});
 });
 app.post('/signup', (req, res) => {
-    const { username, email, password } = req.body;
-
     getuser.getUsers(process.env.API_KEY).then((result) => {
-        if (result.includes(username)) {
-            res.redirect('/login');
+        if (result.includes(req.body.username)) {
+            res.redirect('/login?error=aae');
         } else {
-            updateusers.insertUser(process.env.API_KEY, username, email, hashpassword.hashPassword(password)).then((result) => {
-                if (result.status == 200) {
-                    hashpassword.authToken().then((result) => {
-                        const authToken = result;
-
-                        authTokens[authToken] = username;
-                        res.cookie('AuthToken', authToken);
-                        res.redirect('/app');
-                    })
-                } else {
-                    res.redirect('/signup');
-                }
+            updateusers.insertUser(process.env.API_KEY, req.body.username, req.body.email, hashpassword.hashPassword(req.body.password), hashpassword.generateToken(req.body.username)).then((result) => {
+                res.redirect('/app');
             })
         }
     })
@@ -134,33 +118,40 @@ app.get('/login', (req, res) => {
     res.sendFile('/auth/login.html', {root: path.join(__dirname, 'public')});
 });
 app.post('/login', (req, res) => {
-    const { username, password } = req.body;
-
-    getuser.getUser(process.env.API_KEY, username).then((result) => {
-        if (result.status == 200) {
-            if (result.data.password == hashpassword.hashPassword(password)) {
-                hashpassword.authToken().then((result) => {
-                    const authToken = result;
-
-                    authTokens[authToken] = username;
-                    res.cookie('AuthToken', authToken);
-                    res.redirect('/app');
+    getuser.getUsers().then((result) => {
+        if (result.includes(req.body.username)) {
+            for(let i = 0; i < result.length; i++) {
+                getuser.getUser(process.env.API_KEY, result[i]).then((result) => {
+                    if (result.credentials.email == req.body.email) {
+                        if (hashpassword.hashPassword(req.body.password) == result.credentials.password) {
+                            res.cookie('token', result.credentials.token);
+                            res.redirect('/app');
+                        } else {
+                            res.redirect('/login?error=ieop');
+                        }
+                    } else {
+                        res.redirect('/login?error=ieop');
+                    }
                 })
-            } else {
-                res.redirect('/login');
             }
-        } else {   
-            res.redirect('/login');
+        } else {
+            res.redirect('/login?error=adne');
         }
     })
 });
 
 app.post('/createpost', (req, res) => {
-    const { createpostinput } = req.body;
-
-    updateposts.insertPost(process.env.API_KEY, req.cookies.AuthToken, createpostinput).then(
-        res.redirect('/app')
-    )
-});
+    getuser.getUsers().then((result) => {
+        for(let i = 0; i < result.length; i++) {
+            getuser.getUser(process.env.API_KEY, result[i]).then((result) => {
+                if (result.credentials.token == req.cookies.token) {
+                    console.log(req.body)
+                    updateposts.insertPost(process.env.API_KEY, req.body.username, req.body.content)
+                    res.redirect('/app')
+                }
+            })
+        }
+    })
+})
 
 app.listen(process.env.PORT || 3000 , () => console.log('Server started on port 3000: http://localhost:3000'));

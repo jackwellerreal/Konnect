@@ -10,15 +10,15 @@
         <meta content="Konnect with your friends" property="og:description" />
         <meta content="#3fa7d9" data-react-helmet="true" name="theme-color" />
  
-        <link rel="stylesheet" id="style" href="https://what-question-mark.github.io/Konnect-themes/themes/default/dark/styles.css">
+        <link rel="stylesheet" id="style" href="css/default/dark/styles.css">
          
-        <script src="../index.js"></script>
+        <script src="auth/index.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
     </head>
-    <body id="login" style="overflow: hidden;">
+    <body id="login" style="overflow: hidden;" onload="loginerror()">
         <div class="main-body">
             <div style="width:100%;">
                 <h1>Log In</h1>
@@ -26,10 +26,10 @@
                 </br>
                 <form id="login" action="/login" method="post">
                     <div class="login-input-container">
-                        <input type="email" id="email" class="login-input" placeholder="Email" required>
+                        <input type="email" id="email" class="login-input" placeholder="Email" name="email" autocomplete="email" required>
                     </div>
                     <div class="login-input-container">
-                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" required> 
+                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" name="password" autocomplete="current-password" required> 
                     </div>
     
                     </br>
@@ -37,7 +37,7 @@
     
                     </br> 
                 </form>
-                <a href="signup.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i dont have an account</p></a>
+                <a href="signup" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i dont have an account</p></a>
             </div>
         </div>
     </body>

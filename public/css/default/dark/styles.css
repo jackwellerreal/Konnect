@@ -302,18 +302,12 @@ a {
 .login-input:focus {
     outline: none;
 }
-.login-input:-webkit-autofill:hover:-webkit-autofill,
-.login-input:-webkit-autofill:hover:-webkit-autofill:hover, 
-.login-input:-webkit-autofill:hover:-webkit-autofill:focus, 
-.login-input:-webkit-autofill:hover:-webkit-autofill:active{
-    box-shadow: 0 0 0 30px var(--button) inset !important;
-    -webkit-box-shadow: 0 0 0 30px var(--button) inset !important;
-    -webkit-text-fill-color: var(--button) !important;
-}
-.login-input:-webkit-autofill {
-    box-shadow: 0 0 0 30px var(--button) inset !important;
-    -webkit-box-shadow: 0 0 0 30px var(--button) inset !important;
-    -webkit-text-fill-color: var(--button) !important;
+.login-input:-webkit-autofill,
+.login-input:-webkit-autofill:-webkit-autofill,
+.login-input:-webkit-autofill:-webkit-autofill:hover, 
+.login-input:-webkit-autofill:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--button) inset;
 }
 .login-input {
     padding-left: 1em;

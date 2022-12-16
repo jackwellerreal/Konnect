@@ -19,7 +19,7 @@ async function insertPost(apiKey, username, content) {
                 collection.insertOne({
                     "content":content,
                     "author":username,
-                    "date":moment().format('H:MM A DD/MM/YYYY'),
+                    "date":moment().format('H:MM DD/MM/YYYY'),
                     "type":"post"
                 });
                 return "Post inserted";

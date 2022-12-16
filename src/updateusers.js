@@ -6,7 +6,7 @@ const { MongoClient } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
-async function insertUser(apiKey, username, email, password) {
+async function insertUser(apiKey, username, email, password, token) {
     if (validateApiKey(apiKey)) {
         await client.connect();
         const db = client.db('konnect');
@@ -24,7 +24,8 @@ async function insertUser(apiKey, username, email, password) {
                     "verified":false,
                     "credentials":{
                         "email":email,
-                        "password":password
+                        "password":password,
+                        "token":token
                     }
                 });
                 return "User inserted";
@@ -60,6 +61,26 @@ async function updateUser(apiKey, username, email, password, displayname, bio) {
     }
 }
 
+async function updateUserToken(apiKey, username, token) {
+    if (validateApiKey(apiKey)) {
+        await client.connect();
+        const db = client.db('konnect');
+        const collection = db.collection('users');
+        
+        for await (let user of collection.find()) {
+            if (user.username == username) {
+                user.credentials.token = token; 
+                collection.updateOne({ $set: { credentials: user.credentials } });
+                return "User updated";
+            }
+        }
+
+        await client.close();
+    } else {
+        return "Invalid API key";
+    }
+}
+
 async function deleteUser(apiKey, username) {
     if (validateApiKey(apiKey)) {
         await client.connect();
@@ -81,4 +102,4 @@ async function deleteUser(apiKey, username) {
     }
 }
 
-module.exports = { insertUser, updateUser, deleteUser };
+module.exports = { insertUser, updateUser, updateUserToken, deleteUser };

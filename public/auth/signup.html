@@ -10,15 +10,15 @@
         <meta content="Konnect with your friends" property="og:description" />
         <meta content="#3fa7d9" data-react-helmet="true" name="theme-color" />
  
-        <link rel="stylesheet" id="style" href="https://what-question-mark.github.io/Konnect-themes/themes/default/dark/styles.css">
+        <link rel="stylesheet" id="style" href="css/default/dark/styles.css">
          
-        <script src="../index.js"></script>
+        <script src="auth/index.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
     </head>
-    <body id="signin" style="overflow: hidden;">
+    <body id="signin" style="overflow: hidden;" onload="signuperror()">
         <div class="main-body">
             <div style="width:100%;">
                 <h1>Sign Up</h1>
@@ -26,23 +26,22 @@
                 </br>
                 <form id="signin" action="/signup" method="post">
                     <div class="login-input-container">
-                        <input type="text" id="username" class="login-input" placeholder="Username" autocomplete="off" required>
+                        <input type="text" id="username" class="login-input" placeholder="Username" name="username" autocomplete="nickname" required>
                     </div>
                     <div class="login-input-container">
-                        <input type="email" id="email" class="login-input" placeholder="Email" required>
+                        <input type="email" id="email" class="login-input" placeholder="Email" name="email" autocomplete="email" required>
                     </div>
                     <div class="login-input-container">
-                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" required> 
+                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" name="password" autocomplete="new-password" required> 
                     </div>
     
                     </br>
                     <p><input type="checkbox" class="login-input-tos" required> I am over 13 years old.</p>
                     <input type="submit" class="login-button" value="SIGN UP">
-    
-                    </br> 
 
+                    </br> 
                 </form>
-                <a href="login.html" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
+                <a href="login" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i do have an account</p></a>
             </div>
         </div>
     </body>

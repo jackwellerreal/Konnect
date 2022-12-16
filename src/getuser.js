@@ -24,22 +24,18 @@ async function getUser(apiKey, username) {
     }
 }
 
-async function getUsers(apiKey) {
-    if (validateApiKey(apiKey)) {
-        await client.connect();
-        const db = client.db('konnect');
-        const collection = db.collection('users');
+async function getUsers() {
+    await client.connect();
+    const db = client.db('konnect');
+    const collection = db.collection('users');
         
-        var users = [];
-        for await (let user of collection.find()) {
-            users.push(user.username);
-        }
-
-        await client.close();
-        return users;
-    } else {
-        return "Invalid API key";
+    var users = [];
+    for await (let user of collection.find()) {
+        users.push(user.username);
     }
+
+    await client.close();
+    return users;
 }
 
 module.exports = { getUser, getUsers };
