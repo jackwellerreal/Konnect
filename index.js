@@ -1,17 +1,19 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
+const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
+const autoLinker = require('autolinker');
 const multer = require('multer');
 const crypto = require('crypto');
 require('dotenv').config()
 
-const getuser = require('../src/getuser');
-const getposts = require('../src/getposts');
-const hashpassword = require('../src/hashpassword');
-const updateposts = require('../src/updateposts');
-const updateusers = require('../src/updateusers');
+const getuser = require('./src/getuser');
+const getposts = require('./src/getposts');
+const hashpassword = require('./src/hashpassword');
+const updateposts = require('./src/updateposts');
+const updateusers = require('./src/updateusers');
 
 const app = express();
 const upload = multer();
@@ -146,7 +148,7 @@ app.post('/createpost', (req, res) => {
             getuser.getUser(process.env.API_KEY, result[i]).then((result) => {
                 if (result.credentials.token == req.cookies.token) {
                     console.log(req.body)
-                    updateposts.insertPost(process.env.API_KEY, req.body.username, req.body.content)
+                    updateposts.insertPost(process.env.API_KEY, req.body.username, autoLinker.link(req.body.content, { newWindow: true, className: ''}))
                     res.redirect('/app')
                 }
             })

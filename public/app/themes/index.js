@@ -100,6 +100,10 @@ function previewTheme(theme) {
 }
 
 function loadStore() {
+	window.scrollTo(0, 0);
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+    
     let themesjson = JSON.parse(themes);
 
     for (let theme = 0; theme < themesjson.length; theme++) {  

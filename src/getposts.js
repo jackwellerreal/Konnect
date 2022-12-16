@@ -14,7 +14,13 @@ async function getPosts(apiKey) {
         
         var posts = [];
         for await (let post of collection.find()) {
-            posts.push(post);
+            if(post.type == "news"){}
+            if(post.type == "post"){
+                if(posts.length > 100){}
+                if(post.content.length <= 100){
+                    posts.push(post);
+                }
+            }
         }
 
         await client.close();

@@ -191,8 +191,16 @@ a {
 }
 .post-content {
     margin: 25px 0 0 0;
-    font-size: large;
+    font-size: 1.25em;
     font-weight: 500;
+}
+.post-content-emoji {
+    vertical-align: bottom;
+    width: 1.25em;
+}
+.post-content-link {
+    color: var(--blue-50);
+    text-decoration: underline;
 }
 .post-info {
     display: flex;    
