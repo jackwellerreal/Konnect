@@ -5,6 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
 const autoLinker = require('autolinker');
+const rateLimit = require("express-rate-limit");
 const multer = require('multer');
 const crypto = require('crypto');
 require('dotenv').config()
@@ -20,6 +21,10 @@ const upload = multer();
 const authTokens = {};
 
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(cookieParser());
+app.use(upload.array()); 
 
 /* Home */
 
@@ -94,12 +99,6 @@ app.get('/api/deleteuser', (req, res) => {
 });
 
 /* Auth */
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cookieParser());
-app.use(upload.array()); 
-app.use(express.static('public'));
 
 app.get('/signup', (req, res) => {
     res.sendFile('/auth/signup.html', {root: path.join(__dirname, 'public')});

@@ -79,16 +79,16 @@ const themes = `[
         "path": "/css/social/badhtml/styles.css"
     },
     {   
-        "name": "Mount Fuji",
+        "name": "Mount Fuji Example",
         "author": "whatqm",
         "license": "MIT",
-        "path": "/css/background/styles.css"
+        "path": "/css/examples/background/styles.css"
     },
     {   
-        "name": "Bad HTML",
+        "name": "Blue Exanple",
         "author": "whatqm",
         "license": "MIT",
-        "path": "/css/colour/styles.css"
+        "path": "/css/examples/colour/styles.css"
     }
 ]`;
 
