@@ -22,29 +22,63 @@
     </head>
     <body id="home" onload="onload()">   
         <div class="main-body">
-            <div class="header-left">
-                <div id="header-icons">
-                    <p class="header-content"><a href=""><iconify-icon inline icon="fa6-solid:house"></iconify-icon></a></p>
-                    <p class="header-content"><a href="news/"><iconify-icon inline icon="fa6-solid:newspaper"></iconify-icon></a></p>
-                    <p class="header-content"><a href="messages/"><iconify-icon inline icon="fa6-solid:message"></iconify-icon></a></p>
-                    <p class="header-content"><a href="themes/"><iconify-icon inline icon="fa6-solid:paintbrush"></iconify-icon></a></p>
-                    <p class="header-content"><a href=""><iconify-icon inline icon="fa6-solid:user"></iconify-icon></a></p>   
-                    <p class="header-content"><a href="settings/"><iconify-icon inline icon="fa6-solid:code-compare"></iconify-icon></a></p>
-                </div>
-                <div id="header-text">
-                    <p class="header-content"><a href=""> Home</a></p>
-                    <p class="header-content"><a href="news/"> News</a></p>
-                    <p class="header-content"><a href="messages/"> Messages</a></p>
-                    <p class="header-content"><a href="themes/"> Themes</a></p>
-                    <p class="header-content"><a href=""> Profile</a></p>   
-                    <p class="header-content"><a href="settings/"> Settings</a></p>  
-                </div>         
+            <div class="header-left">   
+                <div>
+                </div>     
+                <div>
+                    <div style="display:block;margin-top: 1.5em;">
+                        <a href="/app">
+                            <img style="width: 32px;" src="../img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/app" style="font-size: 1.5em;">
+                            <iconify-icon inline icon="fa6-solid:house" style="padding-right: 0.5em;"></iconify-icon>  Home
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/app/news" style="font-size: 1.5em;">
+                            <iconify-icon inline icon="fa6-solid:newspaper" style="padding-right: 0.5em;"></iconify-icon>  News
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/app/messages" style="font-size: 1.5em;">
+                            <iconify-icon inline icon="fa6-solid:message" style="padding-right: 0.5em;"></iconify-icon>  Messages
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/app/themes" style="font-size: 1.5em;">
+                            <iconify-icon inline icon="fa6-solid:paintbrush" style="padding-right: 0.5em;"></iconify-icon>  Themes
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/app/settings" style="font-size: 1.5em;">                        
+                            <iconify-icon inline icon="fa6-solid:code-pull-request" style="padding-right: 0.5em;"></iconify-icon>  Settings
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 2.5em;">
+                        <a href="/support" style="font-size: 1.5em;">
+                            <iconify-icon inline icon="fa6-solid:circle-question" style="padding-right: 0.5em;"></iconify-icon>  Support
+                        </a>
+                    </div>
+                    <div style="display:block;margin-top: 3.5em;">
+                        <a href="" style="font-size: 1.5em;padding: 0.5em 1em;border-radius: 9999px;background-color: var(--red-40);">
+                            <iconify-icon inline icon="fa6-solid:paper-plane" style="padding-right: 0.5em;"></iconify-icon>  Post
+                        </a>
+                    </div>
+                </div>     
             </div>
             <div class="main-center">
                 <div class="create-post">
                     <form class="create-post-input-container" id="create-post" action="/createpost" method="post">
-                        <input type="text" class="create-post-input" name="content" placeholder="What's on your mind?" maxlength="50" id="createpostinput" autocomplete="off" required>
-                        <input type="submit" class="create-post-button" id="create-post-button" value="Post">
+                        <div class="create-post-input-text">
+                            <input type="text" class="create-post-input" name="content" placeholder="What's on your mind?" maxlength="50" id="createpostinput" autocomplete="off" required>
+                        </div>
+                        <div class="create-post-options">
+                            <button type="submit" class="create-post-button" id="createpostbutton">
+                                <iconify-icon inline icon="fa6-solid:paper-plane" style="color: var(--white);"></iconify-icon>
+                            </button>
+                        </div>
                     </form>
                 </div>
                 <div class="posts">
@@ -57,7 +91,7 @@
                             </div>
                         </div>
                         <p class="post-content">
-                            Hi <img src="../img/emojis/wave.svg" class="post-content-emoji"> <a href="https://google.com/" class="post-content-link">https://google.com/</a>
+                            Hi <img src="../img/emojis/wave.svg" class="post-content-emoji"> <a href="https://google.com/" target="_blank" class="post-content-link">https://google.com/</a>
                         </p>
                     </div>
                     <div class="post">
@@ -82,6 +116,15 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="header-right">
+                <div>
+                    <div style="display:block;margin: 1.5em 0 0 1.5em;">
+                        <iconify-icon inline icon="fa6-solid:magnifying-glass" style="padding-right: 0.5em;"></iconify-icon>
+                    </div>
+                </div>
+                <div>
+                </div> 
             </div> 
         </div>
     </body>
