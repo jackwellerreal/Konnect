@@ -10,11 +10,11 @@ const multer = require('multer');
 const crypto = require('crypto');
 require('dotenv').config()
 
-const getuser = require('./src/getuser.js');
-const getposts = require('./src/getposts.js');
-const hashpassword = require('./src/hashpassword.js');
-const updateposts = require('./src/updateposts.js');
-const updateusers = require('./src/updateusers.js');
+const getuser = require(__dirname + '/src/getuser.js');
+const getposts = require(__dirname + '/src/getposts.js');
+const hashpassword = require(__dirname + '/src/hashpassword.js');
+const updateposts = require(__dirname + '/src/updateposts.js');
+const updateusers = require(__dirname + '/src/updateusers.js');
 
 const app = express();
 const upload = multer();
