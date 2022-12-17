@@ -43,19 +43,19 @@ If you want to use this a part of this code, please contact <a href="https://www
 
 <h2>Features 🧮</h2>
     
-<h2>Twitter-like feed 🐦</h2>
+<h3>Twitter-like feed 🐦</h3>
 We have a Twitter-like feed, where you can create posts and interact with the community.
     
-<h2>Snapchat-like DMs 👻</h2>
+<h3>Snapchat-like DMs 👻</h3>
 We have a Snapchat-like DM system, where you can send messages to your friends in real time.
     
-<h2>Real-time 📡</h2>
+<h3>Real-time 📡</h3>
 We have real-time updates, so you can see your friends' posts and messages as soon as they are posted.
     
-<h2>Customizable themes 🎨</h2>
+<h3>Customizable themes 🎨</h3>
 We have a custom theme page, so you can change the colors of the app to your liking.
     
-<h2>And more! 🎉</h2>
+<h3>And more! 🎉</h3>
 We have many more features which would take to long to list here. Check out the app to see them all!
     
 <sub>Not all features are implemented yet. We guarantee that all features will be implemented by the time the app is released.</sub>
