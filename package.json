@@ -4,7 +4,7 @@
   "version": "1.0",
   "homepage": "https://github.com/What-Question-Mark/Konnect",
   "main": "index.js",
-  "browser": "./public/index.html",
+  "browser": "./public/home/index.html",
   "packageManager": "npm@8.5.0",
   "bugs": {
     "url": "https://github.com/What-Question-Mark/Konnect/discussions/new?category=issues"
