@@ -61,9 +61,6 @@ app.get('/app/news', (req, res) => {
 app.get('/app/messages', (req, res) => {
     res.sendFile('/app/messages/index.html', {root: path.join(__dirname, 'public')});
 });
-app.get('/app/themes', (req, res) => {
-    res.sendFile('/app/themes/index.html', {root: path.join(__dirname, 'public')});
-});
 app.get('/app/settings', (req, res) => {
     res.sendFile('/app/settings/index.html', {root: path.join(__dirname, 'public')});
 });
