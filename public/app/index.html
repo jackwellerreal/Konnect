@@ -10,7 +10,7 @@
         <meta content="Konnect with your friends" property="og:description" />
         <meta content="#3fa7d9" data-react-helmet="true" name="theme-color" />
  
-        <link rel="stylesheet" id="style" href="../css/default/dark/styles.css">
+        <link rel="stylesheet" id="style" href="../css/styles.css">
 
         <link rel="icon" href="../img/logo.svg">
          
@@ -62,7 +62,7 @@
                         </a>
                     </div>
                     <div style="display:block;margin-top: 3.5em;">
-                        <a href="" style="font-size: 1.5em;padding: 0.5em 1em;border-radius: 9999px;background-color: var(--red-40);">
+                        <a href="/app/createpost" style="font-size: 1.5em;padding: 0.5em 1em;border-radius: 9999px;background-color: var(--red-40);">
                             <i class="fa-solid fa-paper-plane" style="padding-right: 0.5em;"></i>  Post
                         </a>
                     </div>
@@ -70,16 +70,18 @@
             </div>
             <div class="main-center">
                 <div class="create-post">
-                    <form class="create-post-input-container" id="create-post" action="/createpost" method="post">
-                        <div class="create-post-input-text">
-                            <input type="text" class="create-post-input" name="content" placeholder="What's on your mind?" maxlength="50" id="createpostinput" autocomplete="off" required>
+                    <a href="/app/createpost">
+                        <div class="create-post-input-container" id="create-post">
+                            <div class="create-post-input-text">
+                                <input disabled="on" class="create-post-input" placeholder="What's on your mind?">
+                            </div>
+                            <div class="create-post-options">
+                                <button class="create-post-button" id="createpostbutton" disabled="on">
+                                    <i class="fa-solid fa-paper-plane" style="color: var(--white);"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="create-post-options">
-                            <button type="submit" class="create-post-button" id="createpostbutton">
-                                <i class="fa-solid fa-paper-plane" style="color: var(--white);"></i>
-                            </button>
-                        </div>
-                    </form>
+                    </a>
                 </div>
                 <div class="posts">
                     <div class="post">
@@ -91,7 +93,7 @@
                             </div>
                         </div>
                         <p class="post-content">
-                            Hi <img src="../img/emojis/wave.svg" class="post-content-emoji"> <a href="https://google.com/" target="_blank" class="post-content-link">https://google.com/</a>
+                            Hi <img src="../img/emojis/smiles/wave.svg" class="post-content-emoji"> <a href="https://google.com/" target="_blank" class="post-content-link">https://google.com/</a>
                         </p>
                     </div>
                     <div class="post">

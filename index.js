@@ -46,14 +46,14 @@ app.get('/about/acknowledgements', (req, res) => {
 app.get('/support', (req, res) => {
     res.sendFile('/home/support/index.html', {root: path.join(__dirname, 'public')});
 });
-app.get('/beta', (req, res) => {
-    res.sendFile('/home/about/beta/index.html', {root: path.join(__dirname, 'public')});
-});
 
 /* App */
 
 app.get('/app', (req, res) => {
     res.sendFile('/app/index.html', {root: path.join(__dirname, 'public')});
+});
+app.get('/app/createpost', (req, res) => {
+    res.sendFile('/app/create/index.html', {root: path.join(__dirname, 'public')});
 });
 app.get('/app/news', (req, res) => {
     res.sendFile('/app/news/index.html', {root: path.join(__dirname, 'public')});

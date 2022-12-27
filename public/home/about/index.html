@@ -14,12 +14,15 @@
 
         <link rel="icon" href="../img/logo.svg">
         
+        <script defer src="home/index.js"></script>
         <script src="https://kit.fontawesome.com/a2c45d5e35.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
     </head>
     <body id="about">
+        <button onclick="topFunction()" class="top-button" id="top-button" title="Top"><i class="fa-solid fa-arrow-up"></i></button>
+        
         <header>
             <img class="header-logo" src="../img/logo.svg" alt="logo">
             <nav class="navigation">
@@ -43,7 +46,7 @@
         
         <section class="features">
             <div class="feature">
-                <div>
+                <div class="feature-content-container">
                     <h1>
                         One man team
                     </h1>
@@ -59,7 +62,7 @@
                 <div class="feature-image-container">
                     <img src="../img/emojis/flag_au.svg" class="feature-image">
                 </div>
-                <div>
+                <div class="feature-content-container">
                     <h1>
                         Made in Australia
                     </h1>
