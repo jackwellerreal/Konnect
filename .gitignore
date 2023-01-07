@@ -1,4 +1,2 @@
-node_modules/
-.github/
-.vscode/
+node_modules
 .env

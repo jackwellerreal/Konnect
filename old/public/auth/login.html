@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Konnect</title>
+        <meta name="viewport" width="100%">
+        <script src="https://kit.fontawesome.com/a2c45d5e35.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <meta content="Konnect" property="og:title" />
+        <meta content="Konnect with your friends" property="og:description" />
+        <meta content="#3fa7d9" data-react-helmet="true" name="theme-color" />
+ 
+        <link rel="stylesheet" id="style" href="css/default/dark/styles.css">
+         
+        <script src="auth/index.js"></script>
+        <script src="https://kit.fontawesome.com/a2c45d5e35.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+    </head>
+    <body style="overflow: hidden;" onload="loginerror()">
+        <div class="main-body">
+            <div style="width:100%;">
+                <h1>Log In</h1>
+                
+                </br>
+                <form id="login" action="/login" method="post">
+                    <div class="login-input-container">
+                        <input type="email" id="email" class="login-input" placeholder="Email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="login-input-container">
+                        <input type="password" id="pass" class="login-input" placeholder="Password" minlength="8" name="password" autocomplete="current-password" required> 
+                    </div>
+    
+                    </br>
+                    <input type="submit" class="login-button" value="LOG IN">
+    
+                    </br> 
+                </form>
+                <a href="signup" style="color: var(--light-10); text-decoration: none;"><p>Oh wait, i dont have an account</p></a>
+            </div>
+        </div>
+    </body>
+</html>
