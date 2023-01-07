@@ -427,6 +427,8 @@ img {
 }
 .signin-option {
     display: block;
+    font-size: 1.2em;
+    font-weight: 600;
     color: var(--text);
     margin-bottom: 1em;
     padding: 1em 1em 1em 1em;
@@ -444,10 +446,6 @@ img {
 .signin-option:nth-child(3) {
     background-color: #171515;
     border: 1px solid var(--text);
-}
-.signin-option-content {
-    font-size: 1.2em;
-    font-weight: 600;
 }
 
 /* Donations */

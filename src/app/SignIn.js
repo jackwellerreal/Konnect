@@ -47,13 +47,13 @@ export function SignIn() {
           <h1>Sign in</h1>
           <div className="signin-options">
             <button className="signin-option" onClick={signInWithGoogle}>
-              <i className="fa-brands fa-google"></i>{" "}<span className="signin-option-content">Sign In with Google</span>
+              <i className="fa-brands fa-google"></i> Sign In with Google
             </button>
             <button className="signin-option" onClick={signInWithFacebook}>
-              <i className="fa-brands fa-facebook"></i>{" "}<span className="signin-option-content">Sign In with Facebook</span>
+              <i className="fa-brands fa-facebook"></i> Sign In with Facebook
             </button>
             <button className="signin-option" onClick={signInWithGithub}>
-              <i className="fa-brands fa-github"></i>{" "}<span className="signin-option-content">Sign In with Github</span>
+              <i className="fa-brands fa-github"></i> Sign In with Github
             </button>
           </div>
         </div>
