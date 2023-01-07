@@ -521,11 +521,21 @@ img {
     font-weight: 700;
 }
 
-
 /* Scrollbar */
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+/* Error */
+
+.error-text {
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.blinking {
+    animation: 1s linear infinite blinking;
 }
 
 /* Animations */
@@ -541,6 +551,17 @@ img {
     }
     to {
         background-position: -200% center;
+    }
+}
+@keyframes blinking {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
     }
 }
 

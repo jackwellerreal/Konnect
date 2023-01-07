@@ -35,6 +35,8 @@ const firestore = firebase.firestore();
 export function Home() {
   const [user] = useAuthState(auth);
 
+  console.log(user);
+
   const navigate = useNavigate();
 
   const postRef = firestore.collection("posts");
