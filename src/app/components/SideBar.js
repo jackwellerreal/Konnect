@@ -72,7 +72,7 @@ export function SideBarRight() {
           <input type="text" className="searchbox" name="searchquery" placeholder="Search" maxlength="16" id="searchquery" autocomplete="off" required />
         </div>
         <div style={{ display: "block", margin: "1.5em 0 0 1.5em" }}>
-          <button style={{ padding: '0.5em 1em', borderRadius: "9999px", border: 'none', backgroundColor: 'var(--red-40)', fontSize: '1.5em', color: 'var(--text)', cursor: 'pointer' }} onClick={
+          <button style={{ padding: '0.5em 1em', borderRadius: "9999px", border: 'none', backgroundColor: 'var(--red-40)', fontSize: '1.25em', color: 'var(--text)', cursor: 'pointer' }} onClick={
             () => {
               auth.signOut();
               window.location.reload();
