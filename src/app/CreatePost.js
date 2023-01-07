@@ -45,6 +45,8 @@ export function CreatePost() {
 
     let content = filter.clean(formValue);
 
+    setFormValue("");
+    
     if (content.length > 100) {
       content = content.substring(0, 100);
     }
@@ -62,7 +64,6 @@ export function CreatePost() {
       id: uuidv4(),
     });
 
-    setFormValue("");
 
     navigate("/");
   };
